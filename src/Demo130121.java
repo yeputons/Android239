@@ -11,13 +11,14 @@ public class Demo130121 {
     }
 
     private static void helloWorld() {
-        System.out.printf("Hello World! 2+2=%d", 2 + 2);
+        System.out.printf("Hello World! 2+2=%d\n", 2 + 2);
     }
 
     private static int[][] initializeNewArray(int size1, int size2) {
         return new int[size1][size2];
-    }// Remember, the 'array' variable here is just a reference to a memory area,
+    }
 
+    // Remember, the 'array' variable here is just a reference to a memory area,
     // where the data lies. So if you change data, it changes in the caller.
     // But if you changes the variable itself, it won't affect environment.
     private static void fillArray(int[][] array) {
@@ -34,8 +35,9 @@ public class Demo130121 {
         String s = "a" + Integer.toString(2) + "b";
         int minusTwo = Integer.parseInt("-2");
         double floatingPointNumber = 1.0 / 239.0;
-        //
-        System.out.printf("s=%s, minusTwo=%d, floatingPointNumber=%.4f=%f", s, minusTwo,
+        // %.4f means 'round to four digits'. There are other options, just google
+        // 'printf formatting'
+        System.out.printf("s=%s, minusTwo=%d, floatingPointNumber=%.4f=%f\n", s, minusTwo,
                 floatingPointNumber, floatingPointNumber);
     }
 }
