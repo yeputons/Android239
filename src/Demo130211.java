@@ -39,7 +39,7 @@ public class Demo130211 {
 
         Box topBox = Box.createHorizontalBox();
         topBox.add(new JButton("Button 1"));
-        topBox.add(Box.createHorizontalStrut(8)); // Struct is an invisible component with fixed width/height
+        topBox.add(Box.createHorizontalStrut(8)); // Strut is an invisible component with fixed width/height
         topBox.add(new JButton("Button 2"));
         topBox.add(Box.createHorizontalStrut(8));
         topBox.add(new JButton("Button 3"));
